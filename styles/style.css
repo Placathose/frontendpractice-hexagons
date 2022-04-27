@@ -1,0 +1,363 @@
+/* General CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li, ol {
+  list-style-type: none;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.active {
+  background-color: #2C9BFF;
+}
+
+/* mobile devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+  /* Navbar */
+  .nav {
+    position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 13px;
+    color: #000000;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin-top: 7px;
+  }
+  .nav .logo img {
+    height: auto;
+    width: 170px;
+    margin-top: 10px;
+  }
+  .nav .nav-link > a {
+    margin: 0 5px;
+  }
+  /* Landing page */
+  .landing-section {
+    position: relative;
+  }
+  .landing-img img {
+    max-width: 100%;
+    height: 100%;
+  }
+  /* About */
+  .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-description {
+    background-color: #F9DBD7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .about-description .description-container {
+    margin: 30px 40px 80px;
+  }
+  .about-description .description-container h3 {
+    color: #2C9BFF;
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .about-description .description-container p {
+    color: #2C9BFF;
+    margin-bottom: 20px;
+    line-height: 18.3px;
+    font-size: 16px;
+  }
+  .about-image {
+    background-color: #2C9BFF;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .about-image img {
+    margin: 0 auto;
+    height: 320px;
+    width: 320px;
+  }
+  /* Album */
+  .store-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .store-container {
+    margin-top: 33px;
+  }
+  .store h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .store .store-link {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+  .album-grid {
+    margin-top: 47px;
+  }
+  .album-grid .album {
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #2C9BFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .logo {
+    height: auto;
+    width: 170px;
+    margin: 21px 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Navbar */
+  .nav {
+    position: absolute;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 12px;
+    color: #000000;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .nav .logo img {
+    height: auto;
+    width: 200px;
+    margin-top: 20px;
+  }
+  .nav .nav-link > a {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  /* Landing page */
+  .landing-section {
+    position: relative;
+  }
+  .landing-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* About */
+  .about-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .about-description {
+    background-color: #F9DBD7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+  }
+  .about-description .description-container {
+    margin: 30px 40px 80px;
+  }
+  .about-description .description-container h3 {
+    color: #2C9BFF;
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  .about-description .description-container p {
+    color: #2C9BFF;
+    margin-bottom: 20px;
+    line-height: 18.3px;
+    font-size: 16px;
+  }
+  .about-image {
+    background-color: #2C9BFF;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vw;
+  }
+  .about-image img {
+    margin: 0 auto;
+    height: 320px;
+    width: 320px;
+  }
+  /* Album */
+  .store-section {
+    margin: 50px 50px 90px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .store-container {
+    margin-top: 33px;
+  }
+  .store h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .store ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 28px;
+  }
+  .store .store-link {
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+  .album-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .album-grid img.album {
+    max-width: 100%;
+    height: auto;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer {
+    background-color: #2C9BFF;
+  }
+  footer .logo {
+    height: auto;
+    width: 170px;
+    margin: 21px 35px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Landing page */
+  .landing-section {
+    position: relative;
+  }
+  .landing-img img {
+    width: 100vw;
+    height: auto;
+  }
+  .store-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid-container {
+    max-width: 960px;
+  }
+  .album-grid img.album {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
