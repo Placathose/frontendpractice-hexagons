@@ -1,4 +1,4 @@
-const musicType = document.querySelectorAll('ul.links > li');
+const musicType = document.querySelectorAll('ul.links > a');
 const imageType = document.querySelectorAll('ul.album-grid > li');
 
 // Note: musicType.forEach is not a function

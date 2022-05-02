@@ -27,6 +27,68 @@ html, body {
   transition: 0.3s;
 }
 
+/*----This is for the image overlay on the albums---*/
+.album-image {
+  position: relative;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+.image-overlay {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 320px;
+  background: rgba(44, 157, 255, 0.46);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 0;
+}
+
+.image-overlay p {
+  color: white;
+  font-size: 20px;
+}
+
+.image-overlay .title {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.image-overlay .price {
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+/* all direct child of image-overlay*/
+.image-overlay > * {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: -webkit-transform 0.45s;
+  transition: -webkit-transform 0.45s;
+  transition: transform 0.45s;
+  transition: transform 0.45s, -webkit-transform 0.45s;
+}
+
+.image-overlay:hover > * {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 /* mobile devices (phones, 767px and down) */
 @media only screen and (max-width: 767px) {
   /* Navbar */
