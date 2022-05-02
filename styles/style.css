@@ -20,7 +20,11 @@ html, body {
 }
 
 .active {
-  background-color: #2C9BFF;
+  border-bottom: solid 2px #2C9BFF;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* mobile devices (phones, 767px and down) */
