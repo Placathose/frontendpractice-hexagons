@@ -133,15 +133,26 @@ html, body {
   .store-container {
     margin-top: 33px;
   }
-  .store h3 {
+  h3.store {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 12px;
   }
-  .store .store-link {
+  ul.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 28px;
+  }
+  .store-link {
     font-weight: 400;
     font-size: 16px;
-    margin-bottom: 9px;
+    margin-right: 25px;
+    cursor: pointer;
   }
   .album-grid {
     margin-top: 47px;
@@ -280,12 +291,14 @@ html, body {
   .store-container {
     margin-top: 33px;
   }
-  .store h3 {
+  h3.store {
     font-size: 40px;
     font-weight: 700;
+    max-width: 640px;
+    margin: 0 auto;
     margin-bottom: 12px;
   }
-  .store ul {
+  ul.links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,9 +306,11 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    max-width: 640px;
+    margin: 0 auto;
     margin-bottom: 28px;
   }
-  .store .store-link {
+  .store-link {
     font-weight: 400;
     font-size: 16px;
     margin-right: 25px;
@@ -305,17 +320,12 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .album-grid img.album {
-    max-width: 100%;
-    height: auto;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    max-width: 960px;
   }
   footer {
     background-color: #2C9BFF;
@@ -328,7 +338,7 @@ html, body {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1060px) {
   /* Landing page */
   .landing-section {
     position: relative;
@@ -352,12 +362,27 @@ html, body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .grid-container {
+  h3.store {
+    font-size: 40px;
+    font-weight: 700;
     max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 12px;
   }
-  .album-grid img.album {
-    max-width: 100%;
-    height: auto;
+  ul.links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+  .store-container {
+    width: 960px;
   }
 }
 /*# sourceMappingURL=style.css.map */

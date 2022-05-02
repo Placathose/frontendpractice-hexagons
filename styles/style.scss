@@ -123,19 +123,23 @@ html, body {
     margin-top: 33px;
 }
 
-.store {
-    h3 {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 12px;
-    }
+h3.store {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
 
-    .store-link {
-        font-weight: 400;
-        font-size: 16px;
-        margin-bottom: 9px;
-    }
+ul.links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 28px
+}
 
+.store-link {
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 .album-grid {
@@ -247,53 +251,44 @@ footer {
         margin: 50px 50px 90px;
         @include middle-align();
         flex-direction: column;
-        
     }
 
     .store-container {
         margin-top: 33px;
     }
 
-    .store {
-        h3 {
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 28px
-        }
-
-        .store-link {
-            font-weight: 400;
-            font-size: 16px;
-            margin-right: 25px;
-            cursor: pointer;
-        }
-
+    
+    h3.store {
+        font-size: 40px;
+        font-weight: 700;
+        max-width: 640px;
+        margin: 0 auto;
+        margin-bottom: 12px;
     }
 
-    .album-grid {
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
-        // grid-template-rows: repeat(2, 1fr);
-        // gap: 0;
-        // justify-content: center; 
+    ul.links {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        max-width: 640px;
+        margin: 0 auto;
+        margin-bottom: 28px
+    }
+
+    .store-link {
+        font-weight: 400;
+        font-size: 16px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    
+
+
+    .album-grid {
+        display: flex;
+        justify-content: flex-start;
         flex-wrap: wrap;
-
-        
-
-        
-        img.album {
-            max-width: 100%;
-            height: auto;
-            justify-self: center;
-        }
+        max-width: 960px;
     }
 
 
@@ -311,7 +306,7 @@ footer {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1060px) {
 
     /* Landing page */
     .landing-section {
@@ -325,22 +320,31 @@ footer {
 
 
     .store-section {
-        @include middle-align()
+        @include middle-align();
         flex-direction: column;
     }
 
-    .grid-container {
+
+    h3.store {
+        font-size: 40px;
+        font-weight: 700;
         max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 12px;
     }
 
-    .album-grid {
-        
-    
-        img.album {
-            max-width: 100%;
-            height: auto;
-        }
+    ul.links {
+        display: flex;
+        flex-direction: row;
+        max-width: 960px;
+        margin: 0 auto;
+        margin-bottom: 28px
     }
 
+    .store-container {
+        width: 960px;
+    }
+
+   
 
 }
