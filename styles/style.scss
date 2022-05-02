@@ -286,9 +286,11 @@ footer {
 
     .album-grid {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: wrap;
         max-width: 960px;
+        // I gave the album-grid a min-height to stop the section from increase/decrease
+        min-height: 648px;
     }
 
 
@@ -339,6 +341,10 @@ footer {
         max-width: 960px;
         margin: 0 auto;
         margin-bottom: 28px
+    }
+
+    .album-grid {
+        justify-content: flex-start;
     }
 
     .store-container {
